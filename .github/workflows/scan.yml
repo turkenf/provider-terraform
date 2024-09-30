@@ -40,7 +40,7 @@ jobs:
           echo "We are going to scan the last ${supported_releases_number} releases for: ${images}"
 
   scan:
-    uses: upbound/official-providers-ci/.github/workflows/scan.yml@main
+    uses: turkenf/uptest/.github/workflows/scan.yml@5af17f03f7c1c7f4583f28e4fdef845eb4a2c846
     needs:
       - setup-vars
     with:
